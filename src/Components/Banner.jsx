@@ -15,8 +15,14 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaTwitterSquare } from "react-icons/fa";
 const Banner = () => {
   return (
-    <Flex w="70%" m="auto" mt="100px" gap="50px">
-      <Box>
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      w="70%"
+      m="auto"
+      mt="100px"
+      gap="50px"
+    >
+      <Box data-aos="flip-left">
         <Image
           borderRadius="5%"
           boxSize="350px"
