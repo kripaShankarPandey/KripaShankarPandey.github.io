@@ -16,15 +16,10 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
+  Link,
 } from "@chakra-ui/react";
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdFacebook,
-  MdOutlineEmail,
-} from "react-icons/md";
-import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
+import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
+import { BsGithub, BsTwitter, BsPerson } from "react-icons/bs";
 
 export default function Contact() {
   return (
@@ -41,10 +36,7 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Contact</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                    Fill up the form below to contact
-                  </Text>
+                  <Heading>Get in Touch Contact me</Heading>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
                       <Button
@@ -56,7 +48,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}
                       >
-                        +91-988888888
+                        +91-9450341634
                       </Button>
                       <Button
                         size="md"
@@ -67,7 +59,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}
                       >
-                        hello@abc.com
+                        kripapandey302@gmail.com
                       </Button>
                       <Button
                         size="md"
@@ -78,7 +70,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
                       >
-                        Karnavati, India
+                        Basti, U.P India
                       </Button>
                     </VStack>
                   </Box>
@@ -88,30 +80,35 @@ export default function Contact() {
                     px={5}
                     alignItems="flex-start"
                   >
-                    <IconButton
-                      aria-label="facebook"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
-                      icon={<MdFacebook size="28px" />}
-                    />
-                    <IconButton
-                      aria-label="github"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
-                      icon={<BsGithub size="28px" />}
-                    />
-                    <IconButton
+                    <Link href="https://twitter.com/kirpa_pandey">
+                      <IconButton
+                        aria-label="twitter"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#0D74FF" }}
+                        icon={<BsTwitter size="28px" />}
+                      />
+                    </Link>
+                    <Link href="https://github.com/kripaShankarPandey">
+                      <IconButton
+                        aria-label="github"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#0D74FF" }}
+                        icon={<BsGithub size="28px" />}
+                      />
+                    </Link>
+
+                    {/* <IconButton
                       aria-label="discord"
                       variant="ghost"
                       size="lg"
                       isRound={true}
                       _hover={{ bg: "#0D74FF" }}
                       icon={<BsDiscord size="28px" />}
-                    />
+                    /> */}
                   </HStack>
                 </Box>
               </WrapItem>
@@ -119,7 +116,11 @@ export default function Contact() {
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
-                      <FormControl id="name">
+                      <FormControl
+                        action="https://getform.io/f/1b665fab-8147-4dab-80f1-2a00279ff6bd"
+                        method="POST"
+                        id="name"
+                      >
                         <FormLabel>Your Name</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
@@ -152,7 +153,7 @@ export default function Contact() {
                       <FormControl id="name" float="right">
                         <Button
                           variant="solid"
-                          bg="#0D74FF"
+                          bg="teal"
                           color="white"
                           _hover={{}}
                         >
