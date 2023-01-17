@@ -17,7 +17,9 @@ import { BsGlobe } from "react-icons/bs";
 const Projects = () => {
   return (
     <Box id="projects">
-      <Heading>Projects</Heading>
+      <Heading mt={10} mb={10}>
+        Projects
+      </Heading>
       {/* Temtrick .com section */}
       <Grid templateColumns={["1fr", "1fr 1fr", "1fr 1fr 1fr"]} gap={15}>
         <Box boxShadow="dark-lg" padding={10}>
@@ -32,8 +34,8 @@ const Projects = () => {
           <Text lineHeight={7} textAlign={"left"}>
             Tech Stack: HTML | CSS | JAVA SCRIPT
           </Text>
-          <Spacer />
-          <HStack mt={5} justifyContent={"space-between"}>
+
+          <HStack mt={10} justifyContent={"space-between"}>
             <Box>
               <Link href="https://github.com/kripaShankarPandey/TMetric.com_Clone/tree/main/my_first_react_app">
                 <SiGithub size={35} />

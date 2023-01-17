@@ -15,8 +15,10 @@ const Home = () => {
       {/* <About /> */}
       <Skills />
       <Projects />
-      <Heading lineHeight={2}>GitHubCalendar</Heading>
-      <VStack>
+      <Heading mt={10} mb={10} lineHeight={2}>
+        GitHubCalendar
+      </Heading>
+      <VStack mb={10}>
         <GitHubCalendar username="kripashankarpandey" />
       </VStack>
 

@@ -61,12 +61,12 @@ const Banner = () => {
         </HStack>
         <HStack mt={8}>
           <a href={Resume} download="Kripa_Shankar_Pandey">
-            <Button colorScheme="teal" size="lg">
+            <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
               DownLoad CV
             </Button>
           </a>
 
-          <Button colorScheme="teal" size="lg">
+          <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
             Contact Us
           </Button>
         </HStack>

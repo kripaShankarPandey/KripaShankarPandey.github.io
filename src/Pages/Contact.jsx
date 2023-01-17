@@ -19,7 +19,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
-import { BsGithub, BsTwitter, BsPerson } from "react-icons/bs";
+import { BsGithub, BsTwitter, BsLinkedin, BsPerson } from "react-icons/bs";
 
 export default function Contact() {
   return (
@@ -36,7 +36,7 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Get in Touch Contact me</Heading>
+                  <Heading> Contact me</Heading>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
                       <Button
@@ -46,18 +46,18 @@ export default function Contact() {
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdPhone color="#1970F1" size="20px" />}
+                        leftIcon={<MdPhone color="#ffffff" size="20px" />}
                       >
                         +91-9450341634
                       </Button>
                       <Button
                         size="md"
                         height="48px"
-                        width="200px"
+                        width="230px"
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                        leftIcon={<MdEmail color="#ffffff" size="20px" />}
                       >
                         kripapandey302@gmail.com
                       </Button>
@@ -68,7 +68,7 @@ export default function Contact() {
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
+                        leftIcon={<MdLocationOn color="#ffffff" size="20px" />}
                       >
                         Basti, U.P India
                       </Button>
@@ -100,15 +100,16 @@ export default function Contact() {
                         icon={<BsGithub size="28px" />}
                       />
                     </Link>
-
-                    {/* <IconButton
-                      aria-label="discord"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
-                      icon={<BsDiscord size="28px" />}
-                    /> */}
+                    <Link href="https://www.linkedin.com/in/kripa-pandey-9465b215a">
+                      <IconButton
+                        aria-label="github"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#0D74FF" }}
+                        icon={<BsLinkedin size="28px" />}
+                      />
+                    </Link>
                   </HStack>
                 </Box>
               </WrapItem>
