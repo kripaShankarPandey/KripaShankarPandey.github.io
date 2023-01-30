@@ -29,14 +29,20 @@ const Skills = () => {
         Skills
       </Heading>
       <Stack direction={["column", "column", "row"]} spacing="24px">
-        <Box w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}>
+        <Box
+          data-aos="flip-left"
+          w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
+        >
           <Image
             w="100%"
             src="https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"
             alt="image"
           />
         </Box>
-        <Box w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}>
+        <Box
+          data-aos="flip-right"
+          w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
+        >
           <Grid templateColumns="repeat(3, 1fr)" gap={3}>
             <VStack _hover={{ color: "teal.400" }}>
               <SiHtml5 size={80} />

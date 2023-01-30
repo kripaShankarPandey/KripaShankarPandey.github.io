@@ -9,7 +9,7 @@ import GitHubCalendar from "react-github-calendar";
 import { Box, Heading, Image, VStack } from "@chakra-ui/react";
 const Home = () => {
   return (
-    <div id="Home">
+    <div id="home">
       <Navbar />
       <Banner />
       {/* <About /> */}

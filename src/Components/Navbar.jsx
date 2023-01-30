@@ -20,7 +20,7 @@ import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
 
-const id = ["#Home", "#about", "#skills", "#projects", "#contact", "_blank"];
+const id = ["#home", "#about", "#skills", "#projects", "#contact", "_blank"];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -74,7 +74,7 @@ const Navbar = () => {
               display={{ base: "none", md: "flex" }}
               fontWeight="600"
             >
-              <a href="#Home">
+              <a href="#home">
                 <Text fontSize="xl">Home</Text>
               </a>
               <a href="#about">
@@ -127,28 +127,28 @@ const Navbar = () => {
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))} */}
-              <a href="#Home">
-                <Button onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+              <a href="#home">
+                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
                   Home
                 </Button>
               </a>
               <a href="#about">
-                <Button onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
                   About Me
                 </Button>
               </a>
               <a href="#skills">
-                <Button onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
                   Skills
                 </Button>
               </a>
               <a href="#projects">
-                <Button onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button  bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
                   Projects
                 </Button>
               </a>
               <a href="#contact">
-                <Button onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
                   Contact
                 </Button>
               </a>
@@ -156,7 +156,7 @@ const Navbar = () => {
                 target="_blank"
                 href="https://drive.google.com/drive/u/2/my-drive"
               >
-                <Button onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
                   Resume
                 </Button>
               </a>

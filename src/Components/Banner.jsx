@@ -66,9 +66,11 @@ const Banner = () => {
             </Button>
           </a>
 
-          <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
-            Contact Us
-          </Button>
+          <a href="#contact">
+            <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
+              Contact Us
+            </Button>
+          </a>
         </HStack>
       </Box>
     </Flex>

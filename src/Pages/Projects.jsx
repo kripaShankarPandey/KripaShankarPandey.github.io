@@ -22,7 +22,7 @@ const Projects = () => {
       </Heading>
       {/* Temtrick .com section */}
       <Grid templateColumns={["1fr", "1fr 1fr", "1fr 1fr 1fr"]} gap={15}>
-        <Box boxShadow="dark-lg" padding={10}>
+        <Box data-aos="flip-left" boxShadow="dark-lg" padding={10}>
           <Image src={Temaric} alt="Tematrick.com Image" />
           <Text lineHeight={7} fontWeight={"bold"}>
             Tematrick.com Clone
@@ -75,7 +75,7 @@ const Projects = () => {
           </HStack>
         </Box>
         {/* the hindu news */}
-        <Box boxShadow="dark-lg" padding={10}>
+        <Box data-aos="flip-left" boxShadow="dark-lg" padding={10}>
           <Image src={TheHindu} alt="TheHindu.com Image" />
           <Text lineHeight={7} fontWeight={"bold"}>
             TheHindu News Clone

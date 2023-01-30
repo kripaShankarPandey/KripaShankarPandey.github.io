@@ -23,7 +23,7 @@ import { BsGithub, BsTwitter, BsLinkedin, BsPerson } from "react-icons/bs";
 
 export default function Contact() {
   return (
-    <Container maxW="full" mt={0} centerContent overflow="hidden">
+    <Container id="contact" maxW="full" mt={0} centerContent overflow="hidden">
       <Flex>
         <Box
           bg="teal"
