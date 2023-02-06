@@ -47,6 +47,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdPhone color="#ffffff" size="20px" />}
+                        id="contact-phone"
                       >
                         +91-9450341634
                       </Button>
@@ -58,6 +59,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdEmail color="#ffffff" size="20px" />}
+                        id="contact-email"
                       >
                         kripapandey302@gmail.com
                       </Button>
@@ -90,7 +92,10 @@ export default function Contact() {
                         icon={<BsTwitter size="28px" />}
                       />
                     </Link>
-                    <Link href="https://github.com/kripaShankarPandey">
+                    <Link
+                      href="https://github.com/kripaShankarPandey"
+                      id="contact-github"
+                    >
                       <IconButton
                         aria-label="github"
                         variant="ghost"
@@ -100,7 +105,10 @@ export default function Contact() {
                         icon={<BsGithub size="28px" />}
                       />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/kripa-pandey-9465b215a">
+                    <Link
+                      href="https://www.linkedin.com/in/kripa-pandey-9465b215a"
+                      id="contact-linkedin"
+                    >
                       <IconButton
                         aria-label="github"
                         variant="ghost"
