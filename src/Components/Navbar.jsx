@@ -74,19 +74,19 @@ const Navbar = () => {
               display={{ base: "none", md: "flex" }}
               fontWeight="600"
             >
-              <a href="#home">
+              <a href="#home" className="nav-link home">
                 <Text fontSize="xl">Home</Text>
               </a>
-              <a href="#about">
+              <a href="#about" className="nav-link about">
                 <Text fontSize="xl">About Me</Text>
               </a>
-              <a href="#skills">
+              <a href="#skills" className="nav-link skills">
                 <Text fontSize="xl">Skills</Text>
               </a>
-              <a href="#projects">
+              <a href="#projects" className="nav-link projects">
                 <Text fontSize="xl">Projects</Text>
               </a>
-              <a href="#contact">
+              <a href="#contact" className="nav-link contact">
                 <Text fontSize="xl">Contact</Text>
               </a>
               {/* /////
@@ -100,6 +100,7 @@ const Navbar = () => {
                 href="https://drive.google.com/file/d/1niTBKlvqoFtdvpheVtpNkj6W48qBYOzB/view?usp=sharing"
               > */}
               <a
+                className="nav-link resume"
                 href={Resume}
                 download="Kirpa_Shankar_Pandey"
                 // onClick={window.open(
@@ -128,27 +129,47 @@ const Navbar = () => {
                 <NavLink key={link}>{link}</NavLink>
               ))} */}
               <a href="#home">
-                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button
+                  bgColor={"transparent"}
+                  onClick={isOpen ? onClose : onOpen}
+                  fontSize="2xl"
+                >
                   Home
                 </Button>
               </a>
               <a href="#about">
-                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button
+                  bgColor={"transparent"}
+                  onClick={isOpen ? onClose : onOpen}
+                  fontSize="2xl"
+                >
                   About Me
                 </Button>
               </a>
               <a href="#skills">
-                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button
+                  bgColor={"transparent"}
+                  onClick={isOpen ? onClose : onOpen}
+                  fontSize="2xl"
+                >
                   Skills
                 </Button>
               </a>
               <a href="#projects">
-                <Button  bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button
+                  bgColor={"transparent"}
+                  onClick={isOpen ? onClose : onOpen}
+                  fontSize="2xl"
+                >
                   Projects
                 </Button>
               </a>
               <a href="#contact">
-                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button
+                  bgColor={"transparent"}
+                  onClick={isOpen ? onClose : onOpen}
+                  fontSize="2xl"
+                >
                   Contact
                 </Button>
               </a>
@@ -156,7 +177,11 @@ const Navbar = () => {
                 target="_blank"
                 href="https://drive.google.com/drive/u/2/my-drive"
               >
-                <Button bgColor={"transparent"} onClick={isOpen ? onClose : onOpen} fontSize="2xl">
+                <Button
+                  bgColor={"transparent"}
+                  onClick={isOpen ? onClose : onOpen}
+                  fontSize="2xl"
+                >
                   Resume
                 </Button>
               </a>
