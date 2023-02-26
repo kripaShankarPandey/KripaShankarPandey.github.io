@@ -16,12 +16,15 @@ import { SiGithub } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 const Projects = () => {
   return (
-    <Box id="projects">
+    <Box id="projects" mr={["3", "5"]} ml={["3", "5"]}>
       <Heading mt={10} mb={10}>
         Projects
       </Heading>
       {/* Temtrick .com section */}
-      <Grid templateColumns={["1fr", "1fr 1fr", "1fr 1fr 1fr"]} gap={15}>
+      <Grid
+        templateColumns={["1fr", "1fr 1fr", "1fr 1fr", "1fr 1fr 1fr"]}
+        gap={"30px"}
+      >
         <Box data-aos="flip-left" boxShadow="dark-lg" padding={10}>
           <Image src={Temaric} alt="Tematrick.com Image" />
           <Text lineHeight={7} fontWeight={"bold"}>

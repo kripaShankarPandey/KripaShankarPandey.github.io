@@ -50,6 +50,7 @@ const Navbar = () => {
         position="sticky"
         top="0px"
         zIndex="20"
+        id="nav-menu"
       >
         <Flex h={16} alignItems={"center"} justifyContent={"center"}>
           <IconButton

@@ -25,7 +25,11 @@ const Banner = () => {
       <Box data-aos="flip-left">
         <Image
           borderRadius="5%"
-          boxSize="350px"
+          // boxSize="350px"
+          // objectFit="contain"
+          h="80%"
+          maxH="100%"
+          maxW="100%"
           src={Profile}
           alt="Profile Image"
         />
