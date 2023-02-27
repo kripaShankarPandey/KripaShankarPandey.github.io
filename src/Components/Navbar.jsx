@@ -40,7 +40,12 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
-
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1niTBKlvqoFtdvpheVtpNkj6W48qBYOzB/view?usp=sharing",
+      "_blank"
+    );
+  };
   return (
     <>
       <Box
@@ -90,24 +95,13 @@ const Navbar = () => {
               <a href="#contact" className="nav-link contact">
                 <Text fontSize="xl">Contact</Text>
               </a>
-              {/* /////
 
-
-              <a href="image.jpg" download target="_blank" onclick="window.open('https://www.google.com', '_blank');">Download Image and open Google.com</a>
-
-              ///// */}
-              {/* <a
-                target="_blank"
-                href="https://drive.google.com/file/d/1niTBKlvqoFtdvpheVtpNkj6W48qBYOzB/view?usp=sharing"
-              > */}
               <a
+                id="resume-button-1"
                 className="nav-link resume"
                 href={Resume}
                 download="Kirpa_Shankar_Pandey"
-                // onClick={window.open(
-                //   "https://drive.google.com/file/d/1niTBKlvqoFtdvpheVtpNkj6W48qBYOzB/view?usp=sharing",
-                //   "_blank"
-                // )}
+                onClick={handleClick}
               >
                 <Text fontSize="xl">Resume</Text>
               </a>
@@ -176,7 +170,7 @@ const Navbar = () => {
               </a>
               <a
                 target="_blank"
-                href="https://drive.google.com/drive/u/2/my-drive"
+                href="https://drive.google.com/file/d/1niTBKlvqoFtdvpheVtpNkj6W48qBYOzB/view?usp=sharing"
               >
                 <Button
                   bgColor={"transparent"}

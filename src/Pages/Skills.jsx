@@ -43,54 +43,82 @@ const Skills = () => {
           data-aos="flip-right"
           w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
         >
-          <Grid templateColumns="repeat(3, 1fr)" gap={3}>
+          <Grid
+            templateColumns="repeat(3, 1fr)"
+            gap={3}
+            className="skills-card"
+          >
             <VStack _hover={{ color: "teal.400" }}>
-              <SiHtml5 size={80} />
-              <Text fontWeight={"bold"}>Html</Text>
+              <SiHtml5 size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                Html
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiCss3 size={80} />
-              <Text fontWeight={"bold"}>CSS</Text>
+              <SiCss3 size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                CSS
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiJavascript size={80} />
-              <Text fontWeight={"bold"}>Java Script</Text>
+              <SiJavascript size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                Java Script
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiReact size={80} />
-              <Text fontWeight={"bold"}>React</Text>
+              <SiReact size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                React
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiRedux size={80} />
-              <Text fontWeight={"bold"}>Redux</Text>
+              <SiRedux size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                Redux
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiExpress size={80} />
-              <Text fontWeight={"bold"}>Express</Text>
+              <SiExpress size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                Express
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiChakraui size={80} />
-              <Text fontWeight={"bold"}>Chakra UI</Text>
+              <SiChakraui size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                Chakra UI
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiFastapi size={80} />
-              <Text fontWeight={"bold"}>API</Text>
+              <SiFastapi size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                API
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiGithub size={80} />
-              <Text fontWeight={"bold"}>github</Text>
+              <SiGithub size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                github
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiCypress size={80} />
-              <Text fontWeight={"bold"}>Cypress</Text>
+              <SiCypress size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                Cypress
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiTypescript size={80} />
-              <Text fontWeight={"bold"}>Cypress</Text>
+              <SiTypescript size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                TypeScript
+              </Text>
             </VStack>
             <VStack _hover={{ color: "teal.400" }}>
-              <SiMongodb size={80} />
-              <Text fontWeight={"bold"}>Mongo Db</Text>
+              <SiMongodb size={80} className="skills-card-img" />
+              <Text fontWeight={"bold"} className="skills-card-name">
+                Mongo Db
+              </Text>
             </VStack>
           </Grid>
         </Box>
