@@ -23,7 +23,7 @@ const Banner = () => {
       <VStack color="white" pt="40">
         <Heading as="h1">Hi👋, I'm</Heading>
         <Heading as="h1" className="name" id="user-detail-name">
-          Kripa Shankar Pandey
+          Kripa <span style={{ color: "teal" }}>Shankar</span> Pandey
         </Heading>
         <Heading as="h2" color="yellow">
           <span>
