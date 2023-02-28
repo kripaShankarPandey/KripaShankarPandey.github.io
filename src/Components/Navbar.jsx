@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import {
   Box,
   Flex,
@@ -22,7 +21,7 @@ const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
 
 const id = ["#home", "#about", "#skills", "#projects", "#contact", "_blank"];
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({ children }) => (
   <Link
     px={2}
     py={1}
@@ -49,7 +48,8 @@ const Navbar = () => {
   return (
     <>
       <Box
-        bg={useColorModeValue("white", "gray.900")}
+        bg={useColorModeValue("#141321", "gray.900")}
+        color={useColorModeValue("teal.400", "white")}
         boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
         px={4}
         position="sticky"

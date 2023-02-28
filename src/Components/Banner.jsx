@@ -1,83 +1,54 @@
-import {
-  Box,
-  Image,
-  Heading,
-  HStack,
-  Flex,
-  Text,
-  Button,
-  VStack,
-  Link,
-} from "@chakra-ui/react";
-import Resume from "../Utils/resume.pdf";
-import Profile from "../Utils/profilePic.png";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaTwitterSquare } from "react-icons/fa";
-const Banner = () => {
-  return (
-    <Flex
-      direction={{ base: "column", md: "row" }}
-      w="70%"
-      m="auto"
-      mt="100px"
-      gap="50px"
-    >
-      <Box data-aos="flip-left">
-        <Image
-          borderRadius="5%"
-          // boxSize="350px"
-          // objectFit="contain"
-          h="80%"
-          maxH="100%"
-          maxW="100%"
-          src={Profile}
-          alt="Profile Image"
-        />
-      </Box>
-      <Box alignItems="flex-start">
-        <Heading textAlign="left">Hello!</Heading>
-        <Text
-          fontWeight={"bold"}
-          fontSize="xl"
-          textAlign="left"
-          lineHeight={"10"}
-        >
-          I'm Kripa Shankar Pandey
-        </Text>
-        <Text
-          fontWeight={"bold"}
-          fontSize="xl"
-          textAlign="left"
-          lineHeight={"10"}
-        >
-          Full Stack Web Developer, Enthusiast to Learn New Technology
-        </Text>
-        <HStack mt={5} spacing={5}>
-          <Link href="https://github.com/kripaShankarPandey">
-            <BsGithub size={50} />
-          </Link>
-          <Link href="https://www.linkedin.com/in/kripa-pandey-9465b215a/">
-            <BsLinkedin size={42} />
-          </Link>
-          <Link href="https://twitter.com/kirpa_pandey">
-            <FaTwitterSquare size={50} />
-          </Link>
-        </HStack>
-        <HStack mt={8}>
-          <a href={Resume} download="Kripa_Shankar_Pandey">
-            <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
-              DownLoad CV
-            </Button>
-          </a>
+import { Box, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Typewriter } from "react-simple-typewriter";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { particlesOptions } from "../particlesConfig";
 
-          <a href="#contact">
-            <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
-              Contact Us
-            </Button>
-          </a>
-        </HStack>
-      </Box>
-    </Flex>
+const Banner = () => {
+  const particlesInit = (engine) => {
+    loadFull(engine);
+  };
+  return (
+    <Box position="relative" width="100%" height="100vh">
+      <Particles
+        init={particlesInit}
+        options={particlesOptions}
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          zIndex: "-10",
+        }}
+      />
+      <VStack color="white" pt="40">
+        <Heading as="h1">Hi👋, I'm</Heading>
+        <Heading as="h1" className="name" id="user-detail-name">
+          Kripa Shankar Pandey
+        </Heading>
+        <Heading as="h2" color="yellow">
+          <span>
+            <Typewriter
+              id="user-detail-intro"
+              words={[
+                "Full Stack Web Developer",
+                "Always ready to learn New Technology",
+                // "New Technology",
+                // "Competitive programmer",
+                // "BackEnd",
+              ]}
+              loop={500}
+              cursor
+              cursorStyle={"|"}
+              typeSpeed={100}
+              deleteSpeed={100}
+            />
+          </span>
+        </Heading>
+        <Text fontWeight="semibold" fontSize="xl">
+          A Full Stack Web Developer, Enthusiast to Learn New Technology.
+        </Text>
+      </VStack>
+    </Box>
   );
 };
 

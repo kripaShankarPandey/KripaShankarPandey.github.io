@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Banner from "../Components/Banner";
 import Navbar from "../Components/Navbar";
 import About from "./About";
 import Contact from "./Contact";
@@ -15,8 +14,10 @@ import {
   VStack,
   HStack,
   Flex,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { FaArrowUp } from "react-icons/fa";
+import Banner from "../Components/Banner";
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   // Show button when page is scrolled down
@@ -36,9 +37,9 @@ const Home = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div id="home">
+    <Box id="home">
       <Navbar />
-      {/* <Banner /> */}
+      <Banner />
       <About />
       <Skills />
       <Projects />
@@ -53,7 +54,9 @@ const Home = () => {
         gap={["10", "20"]}
         direction={["column", "row"]}
         w={["95%", "95%", "80%"]}
-        ml={["5", "5", "330px"]}
+        m="auto"
+        alignItems="center"
+        justifyContent="center"
       >
         <Box>
           <Image
@@ -73,11 +76,11 @@ const Home = () => {
         </Box>
       </Flex>
 
-      <VStack mt={10} mb="10">
+      <VStack mt={10} mb="10" ml="3" mr="3">
         <Image
           id="github-streak-stats"
           src="
-          https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical"
+          https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&border_radius=20&theme=radical"
           alt="github status"
         />
       </VStack>
@@ -110,7 +113,7 @@ const Home = () => {
           | © 2023 All rights reserved.
         </Text>
       </Box>
-    </div>
+    </Box>
   );
 };
 

@@ -52,7 +52,7 @@ function About() {
             lineHeight={"10"}
             id="user-detail-intro"
           >
-            Full Stack Web Developer, Enthusiast to Learn New Technology
+            Full Stack Web Developer, Enthusiast to Learn New Technology.
           </Text>
           <HStack mt={5} spacing={5}>
             <Link href="https://github.com/kripaShankarPandey">
