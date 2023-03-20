@@ -80,7 +80,7 @@ const Home = () => {
         <Image
           id="github-streak-stats"
           src="
-          https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&border_radius=20&theme=radical"
+          https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20"
           alt="github status"
         />
       </VStack>
