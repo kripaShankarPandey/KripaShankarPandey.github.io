@@ -34,7 +34,7 @@ function About() {
             alt="Profile Image"
           />
         </Box>
-        <Box alignItems="flex-start">
+        <Box alignItems="flex-start" w={["100%", "100%", "55%"]}>
           <Heading textAlign="left">Hello!</Heading>
           <Text
             fontWeight={"bold"}
