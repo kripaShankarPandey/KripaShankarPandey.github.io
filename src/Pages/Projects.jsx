@@ -143,21 +143,123 @@ const Projects = () => {
             </Box>
           </HStack>
         </Box>
-        {/* empty space to add new project */}
-        <Box className="project-card">
-          <Text className="project-title"></Text>
-          <Text className="project-description"></Text>
-          <Text className="project-tech-stack"></Text>
-          <HStack>
+        {/* the hindu news */}
+        <Box
+          data-aos="flip-left"
+          boxShadow="dark-lg"
+          padding={10}
+          className="project-card"
+        >
+          <img src={TheHindu} alt="TheHindu.com Image" />
+          <Text lineHeight={7} fontWeight={"bold"} className="project-title">
+            TheHindu News Clone
+          </Text>
+          <Text
+            lineHeight={7}
+            textAlign={"left"}
+            className="project-description"
+          >
+            A Famous Indian News Company, That Provides Latest News from India
+            and World, News from Politics, Sports, Business, Arts and
+            Entertainment.
+          </Text>
+          <Text
+            lineHeight={7}
+            textAlign={"left"}
+            className="project-tech-stack"
+          >
+            Tech Stack: HTML | CSS | Java Script
+          </Text>
+          <HStack mt={5} justifyContent={"space-between"}>
             <Box className="project-github-link">
-              {/* <Link href="https://github.com/kripaShankarPandey/The-Hindu-News-Clone">
+              <Link href="https://github.com/kripaShankarPandey/The-Hindu-News-Clone">
                 <SiGithub size={35} />
-              </Link> */}
+              </Link>
             </Box>
             <Box className="project-deployed-link">
-              {/* <Link href="https://legendary-treacle-5ec8f4.netlify.app/">
-                <BsGlobe size={35} /> */}
-              {/* </Link> */}
+              <Link href="https://legendary-treacle-5ec8f4.netlify.app/">
+                <BsGlobe size={35} />
+              </Link>
+            </Box>
+          </HStack>
+        </Box>
+        {/* the hindu news */}
+        <Box
+          data-aos="flip-left"
+          boxShadow="dark-lg"
+          padding={10}
+          className="project-card"
+        >
+          <img src={TheHindu} alt="TheHindu.com Image" />
+          <Text lineHeight={7} fontWeight={"bold"} className="project-title">
+            TheHindu News Clone
+          </Text>
+          <Text
+            lineHeight={7}
+            textAlign={"left"}
+            className="project-description"
+          >
+            A Famous Indian News Company, That Provides Latest News from India
+            and World, News from Politics, Sports, Business, Arts and
+            Entertainment.
+          </Text>
+          <Text
+            lineHeight={7}
+            textAlign={"left"}
+            className="project-tech-stack"
+          >
+            Tech Stack: HTML | CSS | Java Script
+          </Text>
+          <HStack mt={5} justifyContent={"space-between"}>
+            <Box className="project-github-link">
+              <Link href="https://github.com/kripaShankarPandey/The-Hindu-News-Clone">
+                <SiGithub size={35} />
+              </Link>
+            </Box>
+            <Box className="project-deployed-link">
+              <Link href="https://legendary-treacle-5ec8f4.netlify.app/">
+                <BsGlobe size={35} />
+              </Link>
+            </Box>
+          </HStack>
+        </Box>
+        {/* the hindu news */}
+        <Box
+          data-aos="flip-left"
+          boxShadow="dark-lg"
+          padding={10}
+          className="project-card"
+        >
+          <img src={TheHindu} alt="TheHindu.com Image" />
+          <Text lineHeight={7} fontWeight={"bold"} className="project-title">
+            TheHindu News Clone
+          </Text>
+          <Text
+            lineHeight={7}
+            textAlign={"left"}
+            className="project-description"
+          >
+            A Famous Indian News Company, That Provides Latest News from India
+            and World, News from Politics, Sports, Business, Arts and
+            Entertainment.
+          </Text>
+          <Text
+            lineHeight={7}
+            textAlign={"left"}
+            className="project-tech-stack"
+          >
+            Tech Stack: HTML | CSS | Java Script
+          </Text>
+          <HStack mt={5} justifyContent={"space-between"}>
+            <Box className="project-github-link">
+              <Link href="https://github.com/kripaShankarPandey/The-Hindu-News-Clone">
+                <SiGithub size={35} />
+              </Link>
+            </Box>
+            <Box className="project-deployed-link">
+              <Link href="https://legendary-treacle-5ec8f4.netlify.app/">
+                <BsGlobe size={35} />
+              </Link>
             </Box>
           </HStack>
         </Box>
