@@ -47,7 +47,7 @@ const Home = () => {
         GitHubCalendar
       </Heading>
       <VStack mb={10} ml={["5"]} mr={["5"]}>
-        <GitHubCalendar username="kripashankarpandey" />
+        <GitHubCalendar username="kripaShankarPandey" />
       </VStack>
 
       <Flex
@@ -62,7 +62,7 @@ const Home = () => {
           <Image
             id="github-stats-card"
             src="
-          https://github-readme-stats.vercel.app/api?username=kripashankarpandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical"
+          https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical"
             alt="github status"
           />
         </Box>
@@ -70,7 +70,7 @@ const Home = () => {
           <Image
             id="github-top-langs"
             src="
-          https://github-readme-stats.vercel.app/api/top-langs/?username=kripashankarpandey&layout=compact&hide=Shell&border_radius=20&theme=radical"
+          https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey&layout=compact&hide=Shell&border_radius=20&theme=radical"
             alt="github status"
           />
         </Box>
@@ -80,7 +80,7 @@ const Home = () => {
         <Image
           id="github-streak-stats"
           src="
-          https://github-readme-streak-stats.herokuapp.com?user=kripashankarpandey&theme=radical&border_radius=20"
+          https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20"
           alt="github status"
         />
       </VStack>
