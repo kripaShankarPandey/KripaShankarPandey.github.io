@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.743f6bdb.css",
-    "main.js": "/static/js/main.a8cf685e.js",
+    "main.js": "/static/js/main.22ac3723.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/thehindu.png": "/static/media/thehindu.d9c7976fb413d962700b.png",
     "static/media/lyst.png": "/static/media/lyst.51d90442c7f80d66272e.png",
@@ -10,11 +10,11 @@
     "static/media/temetric.png": "/static/media/temetric.97fda7dc3998f8571fd6.png",
     "index.html": "/index.html",
     "main.743f6bdb.css.map": "/static/css/main.743f6bdb.css.map",
-    "main.a8cf685e.js.map": "/static/js/main.a8cf685e.js.map",
+    "main.22ac3723.js.map": "/static/js/main.22ac3723.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.743f6bdb.css",
-    "static/js/main.a8cf685e.js"
+    "static/js/main.22ac3723.js"
   ]
 }
