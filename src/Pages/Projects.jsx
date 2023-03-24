@@ -31,7 +31,7 @@ const Projects = () => {
           padding={10}
           className="project-card"
         >
-          <Image src={Temaric} alt="Tematrick.com Image" />
+          <img src={Temaric} alt="Tematrick.com Image" />
           <Text lineHeight={7} fontWeight={"bold"} className="project-title">
             Tematrick.com Clone
           </Text>
@@ -71,7 +71,7 @@ const Projects = () => {
           padding={8}
           className="project-card"
         >
-          <Image src={Lyst} alt="Lyst.com Image" />
+          <img src={Lyst} alt="Lyst.com Image" />
           <Text lineHeight={7} fontWeight={"bold"} className="project-title">
             Lyst.com Clone
           </Text>
@@ -110,7 +110,7 @@ const Projects = () => {
           padding={10}
           className="project-card"
         >
-          <Image src={TheHindu} alt="TheHindu.com Image" />
+          <img src={TheHindu} alt="TheHindu.com Image" />
           <Text lineHeight={7} fontWeight={"bold"} className="project-title">
             TheHindu News Clone
           </Text>

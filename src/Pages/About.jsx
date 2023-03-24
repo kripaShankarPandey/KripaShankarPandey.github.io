@@ -16,6 +16,9 @@ import { FaTwitterSquare } from "react-icons/fa";
 function About() {
   return (
     <Box id="about" className="about section">
+      <Heading mt={10} mb={10}>
+        About
+      </Heading>
       <Flex
         direction={{ base: "column", md: "row" }}
         w="70%"
