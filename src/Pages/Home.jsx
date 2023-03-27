@@ -67,12 +67,14 @@ const Home = () => {
           />
         </Box>
         <Box>
+          //
           <Image
             id="github-top-langs"
-            src="
-          https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey&layout=compact&hide=Shell&border_radius=20&theme=radical"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey"
             alt="github status"
           />
+          /*
+          https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey&layout=compact&hide=Shell&border_radius=20&theme=radical"/*
         </Box>
       </Flex>
 
