@@ -61,13 +61,10 @@ const Home = () => {
         <Box>
           <Image
             id="github-stats-card"
-            src="
-          https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&locale=en"
+            src="https://github-readme-stats.vercel.app/api?username=kripaShankarPandey"
             alt="github status"
           />
-          /*
-          https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical
-          */
+          {/* " https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical" */}
         </Box>
         <Box>
           //
@@ -76,19 +73,18 @@ const Home = () => {
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey"
             alt="github status"
           />
-          /*
-          https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey&layout=compact&hide=Shell&border_radius=20&theme=radical"/*
+          {/*           
+          https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey&layout=compact&hide=Shell&border_radius=20&theme=radical" */}
         </Box>
       </Flex>
 
       <VStack mt={10} mb="10" ml="3" mr="3">
         <Image
           id="github-streak-stats"
-          src="
-          https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey"
+          src="https://streak-stats.demolab.com/?username=kripaShankarPandey"
           alt="github status"
         />
-        /*https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20/*
+        {/* /*https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20/* */}
       </VStack>
       <Contact />
 
