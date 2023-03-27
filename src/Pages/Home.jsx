@@ -62,9 +62,12 @@ const Home = () => {
           <Image
             id="github-stats-card"
             src="
-          https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical"
+          https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&locale=en"
             alt="github status"
           />
+          /*
+          https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical
+          */
         </Box>
         <Box>
           //
@@ -82,9 +85,10 @@ const Home = () => {
         <Image
           id="github-streak-stats"
           src="
-          https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20"
+          https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey"
           alt="github status"
         />
+        /*https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20/*
       </VStack>
       <Contact />
 
