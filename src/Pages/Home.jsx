@@ -81,7 +81,7 @@ const Home = () => {
       <VStack mt={10} mb="10" ml="3" mr="3">
         <Image
           id="github-streak-stats"
-          src="https://streak-stats.demolab.com/?username=kripaShankarPandey"
+          src="https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey"
           alt="github status"
         />
         {/* /*https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20/* */}
