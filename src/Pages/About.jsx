@@ -56,10 +56,9 @@ function About() {
             id="user-detail-intro"
           >
             enthusiastic and innovative aspiring full-stack web developer with
-            hands-on experience in building websites with MERN
-            (HTML,CSS,JavaScript,React,Mongodb) stack. A Computer Science
-            graduate passionate about solving real-life problems and learning
-            new technology
+            hands-on experience in building websites with MERN stack. A Computer
+            Science graduate passionate about solving real-life problems and
+            learning new technology
           </Text>
           <HStack mt={5} spacing={5}>
             <Link href="https://github.com/kripaShankarPandey">

@@ -61,30 +61,25 @@ const Home = () => {
         <Box>
           <Image
             id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=kripaShankarPandey"
+            src=" https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical"
             alt="github status"
           />
-          {/* " https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical" */}
         </Box>
         <Box>
-          //
           <Image
             id="github-top-langs"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey&layout=compact&hide=Shell&border_radius=20&theme=radical"
             alt="github status"
           />
-          {/*           
-          https://github-readme-stats.vercel.app/api/top-langs/?username=kripaShankarPandey&layout=compact&hide=Shell&border_radius=20&theme=radical" */}
         </Box>
       </Flex>
 
       <VStack mt={10} mb="10" ml="3" mr="3">
         <Image
           id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey"
+          src="https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20"
           alt="github status"
         />
-        {/* /*https://github-readme-streak-stats.herokuapp.com?user=kripaShankarPandey&theme=radical&border_radius=20/* */}
       </VStack>
       <Contact />
 
