@@ -14,12 +14,16 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaTwitterSquare } from "react-icons/fa";
 
 function About() {
-  const handleClickResume = () => {
+  function handleResume() {
     window.open(
-      "https://drive.google.com/file/d/1niTBKlvqoFtdvpheVtpNkj6W48qBYOzB/view?usp=sharing",
+      "https://drive.google.com/drive/u/0/folders/0BwCJRF1um-L0cm9RTWRhWmZDMjg?resourcekey=0-LJRJBHKavmwQqiTD7ZUaow",
       "_blank"
     );
-  };
+    const link = document.createElement("a");
+    link.download = "Saurabh-Bhandari-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+  }
   return (
     <Box id="about" className="about section">
       <Heading mt={10} mb={10}>
@@ -79,14 +83,16 @@ function About() {
           </HStack>
           <HStack mt={8}>
             <a
-              href={Resume}
-              download="Kripa_Shankar_Pandey"
-              id="resume-button-2"
-              onClick={handleClickResume}
+              href="https://drive.google.com/uc?export=download&id=1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5"
+              className="nav-link resume"
             >
-              <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
-                DownLoad CV
-              </Button>
+              <button
+                id="resume-button-1"
+                style={{ border: "none", fontWeight: "bold", fontSize: "20px" }}
+                onClick={handleResume}
+              >
+                Resume
+              </button>
             </a>
 
             <a href="#contact">

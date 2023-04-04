@@ -39,11 +39,15 @@ const NavLink = ({ children }) => (
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
-  const handleClick = () => {
+  const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1niTBKlvqoFtdvpheVtpNkj6W48qBYOzB/view?usp=sharing",
+      "https://drive.google.com/drive/u/0/folders/0BwCJRF1um-L0cm9RTWRhWmZDMjg?resourcekey=0-LJRJBHKavmwQqiTD7ZUaow",
       "_blank"
     );
+    const link = document.createElement("a");
+    link.download = "Kripa-Pandey-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
   };
   return (
     <>
@@ -98,13 +102,20 @@ const Navbar = () => {
               </a>
 
               <a
-                id="resume-button-1"
+                href="https://drive.google.com/uc?export=download&id=1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5"
                 className="nav-link resume"
-                href={Resume}
-                download="Kirpa_Shankar_Pandey"
-                onClick={handleClick}
               >
-                <Text fontSize="xl">Resume</Text>
+                <button
+                  id="resume-button-1"
+                  style={{
+                    border: "none",
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                  }}
+                  onClick={handleResume}
+                >
+                  Resume
+                </button>
               </a>
             </HStack>
           </HStack>
