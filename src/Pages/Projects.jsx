@@ -144,7 +144,7 @@ const Projects = () => {
           </HStack>
         </Box>
         {/* the hindu news */}
-        {/* <Box
+        <Box
           data-aos="flip-left"
           boxShadow="dark-lg"
           padding={10}
@@ -182,7 +182,7 @@ const Projects = () => {
               </Link>
             </Box>
           </HStack>
-        </Box> */}
+        </Box>
       </Grid>
     </Box>
   );
