@@ -16,9 +16,13 @@ import { FaTwitterSquare } from "react-icons/fa";
 function About() {
   function handleResume() {
     window.open(
-      "https://drive.google.com/drive/u/0/folders/0BwCJRF1um-L0cm9RTWRhWmZDMjg?resourcekey=0-LJRJBHKavmwQqiTD7ZUaow",
+      "https://drive.google.com/file/d/1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5/view?usp=sharing",
       "_blank"
     );
+    const link = document.createElement("a");
+    link.download = "Saurabh-Bhandari-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
   }
   return (
     <Box id="about" className="about section">
