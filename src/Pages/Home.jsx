@@ -61,7 +61,7 @@ const Home = () => {
         <Box>
           <Image
             id="github-stats-card"
-            src=" https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical"
+            src=" https://github-readme-stats.vercel.app/api?username=kripaShankarPandey"
             alt="github status"
           />
         </Box>
