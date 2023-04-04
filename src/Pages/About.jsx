@@ -16,7 +16,7 @@ import { FaTwitterSquare } from "react-icons/fa";
 function About() {
   function handleResume() {
     window.open(
-      "https://drive.google.com/file/d/1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5/view?usp=sharing",
+      "https://drive.google.com/drive/u/0/folders/0BwCJRF1um-L0cm9RTWRhWmZDMjg?resourcekey=0-LJRJBHKavmwQqiTD7ZUaow",
       "_blank"
     );
     const link = document.createElement("a");
