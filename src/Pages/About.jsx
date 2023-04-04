@@ -87,7 +87,7 @@ function About() {
               className="nav-link resume"
             >
               <button
-                id="resume-button-1"
+                id="resume-button-2"
                 style={{ border: "none", fontWeight: "bold", fontSize: "20px" }}
                 onClick={handleResume}
               >
