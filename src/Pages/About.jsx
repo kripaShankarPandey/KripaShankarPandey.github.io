@@ -14,16 +14,6 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaTwitterSquare } from "react-icons/fa";
 
 function About() {
-  function handleResume() {
-    window.open(
-      "https://drive.google.com/drive/u/0/folders/0BwCJRF1um-L0cm9RTWRhWmZDMjg?resourcekey=0-LJRJBHKavmwQqiTD7ZUaow",
-      "_blank"
-    );
-    const link = document.createElement("a");
-    link.download = "Saurabh-Bhandari-Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-  }
   return (
     <Box id="about" className="about section">
       <Heading mt={10} mb={10}>
@@ -66,9 +56,9 @@ function About() {
             id="user-detail-intro"
           >
             enthusiastic and innovative aspiring full-stack web developer with
-            hands-on experience in building websites with (Html,CSS) MERN stack.
-            A Computer Science graduate passionate about solving real-life
-            problems and learning new technology
+            hands-on experience in building websites with MERN stack. A Computer
+            Science graduate passionate about solving real-life problems and
+            learning new technology
           </Text>
           <HStack mt={5} spacing={5}>
             <Link href="https://github.com/kripaShankarPandey">
@@ -83,16 +73,13 @@ function About() {
           </HStack>
           <HStack mt={8}>
             <a
-              href="https://drive.google.com/uc?export=download&id=1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5"
-              className="nav-link resume"
+              href={Resume}
+              download="Kripa_Shankar_Pandey"
+              id="resume-button-2"
             >
-              <button
-                id="resume-button-2"
-                style={{ border: "none", fontWeight: "bold", fontSize: "20px" }}
-                onClick={handleResume}
-              >
-                Resume
-              </button>
+              <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
+                DownLoad CV
+              </Button>
             </a>
 
             <a href="#contact">
