@@ -14,7 +14,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaTwitterSquare } from "react-icons/fa";
 
 function About() {
-  const handleClick = () => {
+  const handleClickResume = () => {
     window.open(
       "https://drive.google.com/file/d/1niTBKlvqoFtdvpheVtpNkj6W48qBYOzB/view?usp=sharing",
       "_blank"
@@ -82,7 +82,7 @@ function About() {
               href={Resume}
               download="Kripa_Shankar_Pandey"
               id="resume-button-2"
-              onClick={handleClick}
+              onClick={handleClickResume}
             >
               <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
                 DownLoad CV
