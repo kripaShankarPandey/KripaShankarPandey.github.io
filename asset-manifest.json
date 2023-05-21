@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.743f6bdb.css",
-    "main.js": "/static/js/main.7be28fc2.js",
+    "main.js": "/static/js/main.6bf2e543.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/fashion.png": "/static/media/fashion.8792c65ade5522ea4991.png",
+    "static/media/indiaMart.png": "/static/media/indiaMart.bef763b49e36893b7d2c.png",
     "static/media/thehindu.png": "/static/media/thehindu.d9c7976fb413d962700b.png",
-    "static/media/lyst.png": "/static/media/lyst.51d90442c7f80d66272e.png",
     "static/media/profilePic.png": "/static/media/profilePic.54129f406645c8b51b56.png",
-    "static/media/resume.pdf": "/static/media/resume.7a2c583884ab8a759d09.pdf",
+    "static/media/resume.pdf": "/static/media/resume.3e3a6916b1b64045209f.pdf",
     "static/media/temetric.png": "/static/media/temetric.97fda7dc3998f8571fd6.png",
     "index.html": "/index.html",
     "main.743f6bdb.css.map": "/static/css/main.743f6bdb.css.map",
-    "main.7be28fc2.js.map": "/static/js/main.7be28fc2.js.map",
+    "main.6bf2e543.js.map": "/static/js/main.6bf2e543.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.743f6bdb.css",
-    "static/js/main.7be28fc2.js"
+    "static/js/main.6bf2e543.js"
   ]
 }
