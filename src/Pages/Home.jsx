@@ -59,15 +59,10 @@ const Home = () => {
         justifyContent="center"
       >
         <Box>
-          {/* <Image
-            id="github-stats-card"
-            src=" https://github-readme-stats.vercel.app/api?username=kripaShankarPandey"
-            alt="github status"
-          /> */}
           <Image
-            width="500px"
             id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&count_private=true&show_icons=true&theme=dark"
+            src=" https://github-readme-stats.vercel.app/api?username=kripaShankarPandey&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=20&locale=en&theme=radical"
+            alt="github status"
           />
         </Box>
         <Box>
