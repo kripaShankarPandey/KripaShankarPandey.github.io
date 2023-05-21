@@ -1,25 +1,6 @@
-import {
-  Container,
-  Flex,
-  Box,
-  Heading,
-  Text,
-  IconButton,
-  Button,
-  VStack,
-  HStack,
-  Wrap,
-  WrapItem,
-  FormControl,
-  FormLabel,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Textarea,
-  Link,
-} from "@chakra-ui/react";
-import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
-import { BsGithub, BsTwitter, BsLinkedin, BsPerson } from "react-icons/bs";
+import { Box, Heading, IconButton, Button, Link } from "@chakra-ui/react";
+import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
+import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
 
 export default function Contact() {
   return (
@@ -36,7 +17,7 @@ export default function Contact() {
                 variant="ghost"
                 m="3"
                 color="#DCE2FF"
-                _hover={{ border: "2px solid #1C6FEB" }}
+                _hover={{ border: "0px solid #1C6FEB" }}
                 leftIcon={<MdPhone color="#ffffff" size="20px" />}
                 id="contact-phone">
                 +91-9450341634
@@ -48,7 +29,7 @@ export default function Contact() {
                 variant="ghost"
                 m="3"
                 color="#DCE2FF"
-                _hover={{ border: "2px solid #1C6FEB" }}
+                _hover={{ border: "0px solid #1C6FEB" }}
                 leftIcon={<MdEmail color="#ffffff" size="20px" />}
                 id="contact-email">
                 kripapandey302@gmail.com
@@ -60,7 +41,7 @@ export default function Contact() {
                 variant="ghost"
                 m="3"
                 color="#DCE2FF"
-                _hover={{ border: "2px solid #1C6FEB" }}
+                _hover={{ border: "0px solid #1C6FEB" }}
                 leftIcon={<MdLocationOn color="#ffffff" size="20px" />}>
                 Basti, U.P India
               </Button>
