@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/micon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/micon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,15 +22,55 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <!-- Aos Animation -->
-    <!-- <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> -->
+  <!-- Aos Animation -->
+  <!-- <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> -->
 
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>Portfolio</title>
+  <style>
+    /* Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #397524 #DFE9EB;
+    }
+
+    /* Chrome, Edge and Safari */
+    ::-webkit-scrollbar {
+      width: 10px;
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background-color: #DFE9EB;
+    }
+
+    ::-webkit-scrollbar-track:hover {
+      background-color: #B8C0C2;
+    }
+
+    ::-webkit-scrollbar-track:active {
+      background-color: #B8C0C2;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #008080;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #008080;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background-color: #008080;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -42,10 +80,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <!-- Aos Script -->
-    <!-- <script src="bower_components/aos/dist/aos.js"></script>
+  <!-- Aos Script -->
+  <!-- <script src="bower_components/aos/dist/aos.js"></script>
     <script>
       AOS.init();
     </script> -->
-  </body>
+</body>
+
 </html>
