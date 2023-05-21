@@ -23,7 +23,7 @@ import { BsGithub, BsTwitter, BsLinkedin, BsPerson } from "react-icons/bs";
 
 export default function Contact() {
   return (
-    <Box bg="teal" color="white">
+    <Box bg="#141321" color="white">
       <Box p={4}>
         <Box>
           <Heading> Keep in touch</Heading>
