@@ -1,0 +1,133 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* For dark mode variant support */
+@custom-variant dark (&:is(.dark *));
+
+/* Tailwind Theme Tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-orbitron), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-fira-code), ui-monospace, monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* -------------------- 🌞 LIGHT MODE - Cyber Theme -------------------- */
+:root {
+  --radius: 0.5rem;
+
+  --bg-1: oklch(0.97 0.01 240); /* light cyan tint background */
+  --bg-2: oklch(0.93 0.015 240); /* card surface with cyan tint */
+  --bg-3: oklch(0.88 0.02 240); /* secondary surface */
+
+  --fg-1: oklch(0.15 0.03 260); /* deep purple-blue text */
+  --fg-2: oklch(0.35 0.05 260); /* secondary text */
+  --fg-3: oklch(0.55 0.04 260); /* muted text */
+
+  --background: var(--bg-1);
+  --foreground: var(--fg-1);
+  --card: var(--bg-2);
+  --card-foreground: var(--fg-1);
+  --popover: var(--bg-2);
+  --popover-foreground: var(--fg-1);
+  --primary: oklch(0.45 0.22 260); /* electric cyan-blue */
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.88 0.08 260);
+  --secondary-foreground: oklch(0.2 0.05 260);
+  --muted: var(--bg-3);
+  --muted-foreground: var(--fg-3);
+  --accent: oklch(0.55 0.25 320); /* neon magenta */
+  --accent-foreground: oklch(0.98 0 0);
+  --border: oklch(0.82 0.03 240);
+  --input: oklch(0.85 0.03 240);
+  --ring: oklch(0.55 0.22 260);
+}
+
+/* -------------------- 🌑 DARK MODE - Cyberpunk Theme -------------------- */
+.dark {
+  --bg-1: oklch(0.08 0.02 260); /* deep dark with blue tint */
+  --bg-2: oklch(0.12 0.025 260); /* card surface */
+  --bg-3: oklch(0.16 0.03 260); /* elevated surface */
+
+  --fg-1: oklch(0.95 0.05 190); /* bright cyan-white */
+  --fg-2: oklch(0.75 0.08 190); /* cyan-tinted secondary */
+  --fg-3: oklch(0.55 0.06 190); /* muted cyan */
+
+  --background: var(--bg-1);
+  --foreground: var(--fg-1);
+  --card: var(--bg-2);
+  --card-foreground: var(--fg-1);
+  --popover: var(--bg-2);
+  --popover-foreground: var(--fg-1);
+  --primary: oklch(0.7 0.28 190); /* neon cyan glow */
+  --primary-foreground: oklch(0.05 0.02 260);
+  --secondary: oklch(0.25 0.08 260);
+  --secondary-foreground: oklch(0.9 0.05 190);
+  --muted: var(--bg-3);
+  --muted-foreground: var(--fg-3);
+  --accent: oklch(0.65 0.32 320); /* electric magenta/purple */
+  --accent-foreground: oklch(0.95 0.05 190);
+  --border: oklch(0.22 0.04 260);
+  --input: oklch(0.18 0.04 260);
+  --ring: oklch(0.7 0.28 190);
+}
+
+/* -------------------- ⚙️ Base Styles -------------------- */
+@layer base {
+  * {
+    @apply border-border outline-ring/50 transition-colors duration-300;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.011em;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-orbitron), ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+  
+  code, pre, .font-mono {
+    font-family: var(--font-fira-code), ui-monospace, monospace;
+  }
+}
+
+@layer utilities {
+  .bg-1 {
+    background-color: var(--bg-1);
+  }
+  .bg-2 {
+    background-color: var(--bg-2);
+  }
+  .bg-3 {
+    background-color: var(--bg-3);
+  }
+
+  .fg-1 {
+    color: var(--fg-1);
+  }
+  .fg-2 {
+    color: var(--fg-2);
+  }
+  .fg-3 {
+    color: var(--fg-3);
+  }
+}
