@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5;url=https://your-new-portfolio.com">
+    <title>Redirecting to New Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="icon-wrapper">
+                <svg class="redirect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+            <h1>Portfolio Moved</h1>
+            <p class="message">I've moved to a new portfolio site!</p>
+            <p class="redirect-info">You'll be redirected automatically in <span id="countdown">5</span> seconds...</p>
+            <a href="https://your-new-portfolio.com" class="btn">Visit Now</a>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
