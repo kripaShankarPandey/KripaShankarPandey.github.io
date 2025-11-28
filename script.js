@@ -1,4 +1,4 @@
-const REDIRECT_URL = 'https://kripa-pandey.vercel.app/';
+const REDIRECT_URL = 'https://kripapandey.in/';
 const REDIRECT_DELAY = 5;
 
 let timeLeft = REDIRECT_DELAY;
